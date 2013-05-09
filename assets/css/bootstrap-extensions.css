@@ -26,3 +26,8 @@ pre { background: #fdf6e3; border: 1px solid #ddd }
 #sidebar {
     margin-top:4em;
 }
+#sidebar li {
+    display: inline;
+    list-style-type: none;
+    padding-right: 20px;
+}
