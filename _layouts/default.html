@@ -19,9 +19,6 @@
 		<div class=container>
 			<div class="row">
 				<div class="span3" id="menu_col">
-					<div id='header'>
-						<h1>leonardok.</h1>
-					</div>
 
 					<div id='sidebar'>
 						<ul class="unstyled">
@@ -32,10 +29,8 @@
 						</ul>
 						<br>
 						<ul class="unstyled">
-							<li><a target="_blank" href="http://github.com/leonardok">github.com/leonardok</a></li>
-							<li><a target="_blank" href="http://bitbucket.org/leonardok/">bitbucket.org/leonardok</a></li>
-							<li><a target="_blank" href="http://flickr.com/leokorndorfer">flickr.com/leokorndorfer</a></li>
-							<li><a target="_blank" href="http://twitter.com/leonardork">twitter.com/leonardork</a></li>
+							<li><a target="_blank" href="http://github.com/c0g">GitHub - Public</a></li>
+							<li><a target="_blank" href="http://bitbucket.org/tnickson/">BitBucket - Private</a></li>
 						</ul>
 					</div>
 
@@ -53,31 +48,10 @@
 		</div>
 
 
-		{% if site.github %}
-		<a href="http://github.com/{{ site.github.username }}">
-			<img style="position: absolute; top: 0; right: 0; border: 0;" 
-					src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" 
-					alt="Fork me on GitHub" />
-		</a>
-		{% endif %}
-
-
 		<script src="http://softwaremaniacs.org/media/soft/highlight/highlight.pack.js"></script>
 		<script>hljs.initHighlightingOnLoad();</script>
 
-		{% if site.google_analytics %}
-		<!-- google analytics async -->
-		<script type="text/javascript">
-			var _gaq = _gaq || [];
-			_gaq.push(['_setAccount', '{{ site.google_analytics.account }}']);
-			_gaq.push(['_trackPageview']);
-			(function() {
-				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-			})();
-		</script>
-		{% endif %}
+
 
 
 	</body>
