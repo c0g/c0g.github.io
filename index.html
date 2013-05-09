@@ -9,7 +9,7 @@ description:
     <p>Watch as I try to keep a regular log of what I'm getting up to in my Machine Learning DPhil. 
 </span>
 <ul cl4ss="unstyled">
-{% for post in site.phd %}
+{% for post in site._phd %}
 <li><a href="{{ post.url }}">{{ post.title }} <i class="icon-hand-left"></i></a></li>
 {% endfor %}
 </ul>
