@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Second Post
+title: Funbundles
 tags: [phd]
 ---
 
