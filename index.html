@@ -3,18 +3,14 @@ layout: default
 description: 
 ---
 
-<h1>I don't think this is what you're looking for.</h1>
-This is my personal website. Here you can find some information about me and stuff that I do.
-
-Thanks for stopping by.
-
-<h3>Posts</h3>
+<h1>Tom Nickson</h1>
+<h3>PhDiary</h3>
 <span>
-	<p>My posts are more self notes to how to redo stuff I do and find cool.</p>
+    <p>I try to keep a regular log of what I'm getting up to in my Machine Learning DPhil. 
 </span>
 
 <ul class="unstyled">
-{% for post in site.posts %}
+{% for post in site.phd %}
 <li><a href="{{ post.url }}">{{ post.title }} <i class="icon-hand-left"></i></a></li>
 {% endfor %}
 </ul>
