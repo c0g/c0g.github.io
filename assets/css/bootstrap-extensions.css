@@ -45,5 +45,5 @@ pre { background: #fdf6e3; border: 1px solid #ddd }
     width: inherit;
     z-index: -1;  
 }
-html { font-family: 'Alegreya', serif; }
+body html{ font-family: 'Alegreya', serif; }
 
