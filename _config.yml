@@ -10,7 +10,6 @@ include: ['_pages/', 'images', 'files']
 
 title: c0g
 author: Tom Nickson
-email: tron@robots.ox.ac.uk
 
 # configuration for ehancements, uncomment to enable
 
