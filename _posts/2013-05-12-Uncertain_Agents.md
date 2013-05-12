@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Uncertain Agents
-tags: [phd,pyagent,horace]
+tags: [phd]
 date: 2013-05-09
 ---
 *Post is stil lbeing written*

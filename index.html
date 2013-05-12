@@ -9,7 +9,7 @@ description:
             <h1>PhDiary</h1>
             <ul cl4ss="unstyled">
             {% for post in site.tags.phd %}
-            <li><a href="{{ post.url }}">{{ post.title }} <i class="icon-hand-left"></i></a></li>
+            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
             {% endfor %}
             </ul>
         </div>
@@ -17,7 +17,7 @@ description:
             <h1>Everything</h4>
             <ul cl4ss="unstyled">
             {% for post in site.posts %}
-            <li><a href="{{ post.url }}">{{ post.title }} <i class="icon-hand-left"></i></a></li>
+            <li><a href="{{ post.url }}">{{ post.title }}</i></a></li>
             {% endfor %}
         </div>
     </div>
