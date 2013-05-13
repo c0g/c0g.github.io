@@ -4,7 +4,7 @@ title: Uncertain Agents
 tags: phd sausage
 date: 2013-05-09
 ---
-*Post $sin(x)\^2$ is stil lbeing written*
+*Post $sin(x)^2$ is stil lbeing written*
 
 It seems cruel to inflict uncertainty on a robot - the only thing the poor machines have going for them is unflappable certainty born from a lack of imagination. However, such is the life of Bayesian.
 

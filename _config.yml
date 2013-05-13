@@ -3,7 +3,7 @@
 permalink: date
 pygments: true
 exclude: ['Rakefile', 'README.md', 'config.rb']
-markdown: rdiscount
+markdown: kramdown 
 include: ['_pages/', 'images', 'files']
 
 # configuration required for some pages
@@ -19,6 +19,7 @@ author: Tom Nickson
 
 github:
   username: c0g
+
 
 # disqus:
 #   id: disqusid
