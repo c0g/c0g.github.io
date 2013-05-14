@@ -1,0 +1,25 @@
+---
+layout: default
+description: 
+---
+<span><p>Watch with amazement as I progress through a Machine Learning PhD</p></span>
+<div class="container-fluid fill">
+    <div class="row-fluid">
+        <div class="span6 filler">
+            <h1>PhDiary</h1>
+            <ul cl4ss="unstyled">
+            {% for post in site.tags.phd %}
+            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %}
+            </ul>
+        </div>
+        <div class="span6">
+            <h1>Everything</h4>
+            <ul cl4ss="unstyled">
+            {% for post in site.posts %}
+            <li><a href="{{ post.url }}">{{ post.title }}</i></a></li>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
