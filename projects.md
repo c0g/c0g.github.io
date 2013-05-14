@@ -6,7 +6,7 @@ title: Projects
 
 # Active
 
-##### Electric Gaia
+#### Electric Gaia
 
 ###### Distributed Inference
 
