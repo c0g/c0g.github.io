@@ -8,7 +8,7 @@ title: Projects
 
 ###### Distributed Inference
 
-It's an oft repeated fallacy that people use 10% of their brains, when actually this is only true for people who repeat it. What is universally true however that the power in today's mobile phones is mindblowing, when compared to even powerful desktop computers of a few years ago. Modern Androids and iPhones have enough local processing power to do worthwhile inference, and we need algorithms and applications to use it for more than just porcine physics simulation.
+It's an oft repeated fallacy that people use 10% of their brains, when actually this is only true for people who repeat it. What is universally true however is that the power in today's mobile phones is mindblowing, when compared to even powerful desktop computers of a few years ago. Modern Androids and iPhones have enough local processing power to do worthwhile inference, and we need algorithms and applications to use it for more than just porcine physics simulation.
 
 ###### Cheapening Science
 
