@@ -4,6 +4,7 @@ title: Projects
 ---
 <h1>{{ page.title }}</h1>
 
+<<<<<<< HEAD
 #Active
 ##Electric Gaia
 ###Distributed Inference
@@ -17,3 +18,7 @@ Products like the [SensorDrone](http://sensordrone.com) bring real sensor capabi
 I did some work on the ORCHID project's AgentSwitch project, which aims to help people reduce their energy costs. We used a Gaussian Process (do you notice a trend in the things I'm working on here?) to extrapolate people's energy usage into the future. 
 
 The really useful thing we got from the GP framework compared to simpler, faster methods was the variance readings. A high variance on the prediction means there's something wrong - we shouldn't put much trust in the prediction.
+=======
+More to come.
+
+>>>>>>> dc5b5011b2aae881b4a806ecf517eecf5f197955
