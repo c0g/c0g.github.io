@@ -4,7 +4,7 @@ title: Projects
 ---
 <h1>{{ page.title }}</h1>
 
-# Active
+## Active
 
 #### Electric Gaia
 
@@ -16,7 +16,7 @@ It's an oft repeated fallacy that people use 10% of their brains, when actually 
 
 Products like the [SensorDrone](http://sensordrone.com) give ordinary people (like you!) a chance to do real science. They also give scientists the chance to get free work. I'm looking into just what we can infer using the commond or garden Google Nexus 4 and a simple SensorDrone. Have an idea? Let me know!
 
-# Past
+## Past
 
 ###### Agentswitch
 
