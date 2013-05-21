@@ -8,7 +8,7 @@ title: Projects
 
 ###### Distributed Inference
 
-It is a [widely believed fact](/lie.html)that people only use 10% of their brains. What is universally true however is that the power in today's mobile phones is mindblowing and criminally underused, even when compared to even powerful desktop computers of a few years ago. Modern Androids and iPhones have enough local processing power to do worthwhile inference, and we need algorithms and applications to use it for more than just porcine physics simulation.
+It is a [widely believed fact](/lie.html) that people only use 10% of their brains. What is universally true however is that the power in today's mobile phones is mindblowing and criminally underused, even when compared to even powerful desktop computers of a few years ago. Modern Androids and iPhones have enough local processing power to do worthwhile inference, and we need algorithms and applications to use it for more than just porcine physics simulation.
 
 ###### Cheapening Science
 
