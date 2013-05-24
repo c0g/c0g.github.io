@@ -51,6 +51,6 @@ The aim was to minimize the expected mean function (_not_ the expected loss). In
 
 ### Next Steps:
 
-* Modify to use expected loss/gain.
+* Modify to use expected loss/gain (ref: Mike's work on GPGO)
 * Look into communication between agents to decide precedence for investigating a certain area.
 
