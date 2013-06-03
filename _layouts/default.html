@@ -10,7 +10,11 @@
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
     tex2jax: { inlineMath: [['$','$'],['\\(','\\)']] },
-    TeX: { equationNumbers: {autoNumber: "all"} } 
+    TeX: { equationNumbers: {autoNumber: "all"},
+           Macros: {
+            twopartdef: ['{\\left\\{\\begin{array}{ll}#1 \& \\mbox{if } #2 \\\\#3 & \\mbox{if } #4\\end{array}\\right.}',4],
+          }
+        }
   });
 </script>
 

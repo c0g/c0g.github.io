@@ -2,22 +2,39 @@
 layout: default
 description: 
 ---
-<span><p>Watch with amazement as I progress through a Machine Learning PhD. Below are links to my research blog. I also have a <a href="/projects">projects</a> pages where I give an overview of some of the things I'm playing with, and an <a href="/about">about</a> page where I write about how great I am.</p></span>
+<span><p>Watch with amazement as I progress through a Machine Learning PhD. Below are links to my blog posts. I also have a <a href="/projects">projects</a> pages where I give an overview of some of the things I'm playing with, and an <a href="/about">about</a> page where I write about how great I am.</p></span>
 <div class="container-fluid fill">
+    <div class="filler">
+            <h1>Interesting bits</h1>
+            <p>It's all relative.</p>
+            <ul>
+            {% for post in site.tags.important %}
+            {% unless post.private %}
+            <li><a href="{{ post.url }}">{{ post.title }} - {{ post.date | date: "%d %b %Y" }}</a></li>
+            {% endunless %}
+            {% endfor %}
+            </ul>
+    </div>
     <div class="row-fluid">
         <div class="span6 filler">
             <h1>PhDiary</h1>
-            <ul cl4ss="unstyled">
+            <p>Lots of posts of maths and program snippets, probably minutes from meetings.</p>
+            <ul>
             {% for post in site.tags.phd %}
-            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+            {% unless post.private %}
+            <li><a href="{{ post.url }}">{{ post.title }} - {{ post.date | date: "%d %b %Y" }}</a></li>
+            {% endunless %}
             {% endfor %}
             </ul>
         </div>
         <div class="span6">
             <h1>Everything</h4>
-            <ul cl4ss="unstyled">
+            <p>Just a gurt big list.</p>
+            <ul>
             {% for post in site.posts %}
-            <li><a href="{{ post.url }}">{{ post.title }}</i></a></li>
+            {% unless post.private %}
+            <li><a href="{{ post.url }}">{{ post.title }}-  {{ post.date | date: "%d %b %Y" }}</i></a></li>
+            {% endunless %}
             {% endfor %}
         </div>
     </div>

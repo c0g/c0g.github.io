@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Modelling agent reliability
-tags: phd horace
+tags: phd horace important
 date: 2013-05-24
 ---
 I'll start by explaining why I am doing this particular piece of work - Mike has rightly warned me about having fun solving made up problems. 
