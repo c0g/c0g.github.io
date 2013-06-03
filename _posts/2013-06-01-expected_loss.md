@@ -6,7 +6,7 @@ layout: post
 private: true
 ---
 
-The global part of GPGO comes from the \eqref{exp_loss}, the epectation of the loss function of \eqref{loss}. $\eta$ is the current minimum of the function of interest. 
+The global part of GPGO comes from the \eqref{exp_loss}, the expectation of the loss function of \eqref{loss}. $\eta$ is the current minimum of the function of interest. 
 
 $$
 \label{loss}
@@ -33,7 +33,7 @@ $$
 \sigma(z)^2 = K_{zz} - K_{zd}K_{dd}^{-1}K_{dz}
 $$
 
-where $K\_{zz'} = K(z, z')$. Writing this in sum form for N observations, with the Normal kernel explicity shown and the matrix $\mathbf{W} = K\_{dd}^{-1}$:
+where $K\_{zz'} = K(z, z')$. Writing this in sum form for N observations, with the Normal kernel explicitly shown and the matrix $\mathbf{W} = K\_{dd}^{-1}$:
 
 $$
 \sigma(z)^2 = \mathcal{N}(z \mid z, \Sigma_{gp}) - 
@@ -57,7 +57,7 @@ $$
 \ dz
 $$
 
-using Gaussian identites to rearrange this into one normal dependant on z, 
+using Gaussian identities to rearrange this into one normal dependant on z, 
 
 $$
 \mathcal{N}(z \mid c, \Sigma_1) 

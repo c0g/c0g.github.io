@@ -7,13 +7,13 @@ title: Maths of the Reliability model
 
 Steve asked me to go into more detail about the maths I used to generate that _beautiful_ video in my last post.
 
-The overall intention of this work is a small extension to [Gaussian Processes for Global Observation][gpgo] (GPGO). In GPGO it is possible to sample at any point in the objective function, and samples are guaranteed to be carried out at the intended location.
+The overall intention of this work is a small extension to [Gaussian Processes for Global Observation [gpgo] (GPGO). In GPGO it is possible to sample at any point in the objective function, and samples are guaranteed to be carried out at the intended location.
 
-In a citizen science application we might have constraints on where the participant is willing to go, and on how likely they are to follow our instructions. We can model these with a probability distribution $p(\mathbf{z} \mid \mathbf{c})$ over locations $\mathbf{z}$ given an instruction or contorl input $\mathbf{c}$.
+In a citizen science application we might have constraints on where the participant is willing to go, and on how likely they are to follow our instructions. We can model these with a probability distribution $p(\mathbf{z} \mid \mathbf{c})$ over locations $\mathbf{z}$ given an instruction or control input $\mathbf{c}$.
 
 In a citizen science application, our $\mathbf{c}$ might be an instruction to the user to take a given route to work. This may not be the quickest route, so there is a chance they will ignore our request, be delayed by traffic or decide not to go to work that day.
 
-In this work, we used a very simple model of a robot with an uncertain control system, contrained to be able to move approximately one unit of space in one unit of time. Given a control input $\mathbf{c}$, it attempted to reach that point by the next time step. We modelled the control system with a normal distribution, such that $p(\mathbf{z} \mid \mathbf{c}) = \mathcal{N}(\mathbf{z} \mid \mathbf{c}, \mathbf{\Sigma_c})$.
+In this work, we used a very simple model of a robot with an uncertain control system, constrained to be able to move approximately one unit of space in one unit of time. Given a control input $\mathbf{c}$, it attempted to reach that point by the next time step. We modelled the control system with a normal distribution, such that $p(\mathbf{z} \mid \mathbf{c}) = \mathcal{N}(\mathbf{z} \mid \mathbf{c}, \mathbf{\Sigma_c})$.
 
 At each time-step, the robot decided where to make its next move by minimising a cost function over the control input $\mathbf{c}$, constrained so that $\| \mathbf{z_{now}} - \mathbf{c}\| = 0$. If we use a Gaussian Process (GP) to represent the robot's view of the world, one of the simplest functions to optimize would be the expected value of the mean of the GP for a control $\mathbf{c}$, given the distribution $p (\mathbf{z} \mid \mathbf{c}) $.
 
@@ -27,7 +27,7 @@ f(x) p(f \mid f_D, z_D, I ) p(z \mid c ) \ df \ dz
 = \int_{-\infty}^{\infty}  m(z \mid f_D, z_D, I) p(z \mid c) \ dz 
 $$
 
-where $m(z \mid f\_D, z\_D, I) = K\_{CD}K\_{DD}^{-1}f\_D$, and $K\_{CD}$ is the vector of covariances of the control input $\mathbf{c}$ to sample locations $\mathbf{z}\_D$ and $K\_{DD}$ is matrix of convariances between sample locations. Given our Normal covariance kernel, we can write this as:
+where $m(z \mid f\_D, z\_D, I) = K\_{CD}K\_{DD}^{-1}f\_D$, and $K\_{CD}$ is the vector of covariances of the control input $\mathbf{c}$ to sample locations $\mathbf{z}\_D$ and $K\_{DD}$ is matrix of covariances between sample locations. Given our Normal covariance kernel, we can write this as:
 
 $$
 \mathbb{E}_c(m(z))=
