@@ -87,18 +87,9 @@ $$
 \mathbf{W}_{i,j}
 $$
 
-Now, we just need to rewrite this as a vectorised expression for speed (makes me wish I was using I [julia]):
+Writing that equation in code was remarkably difficult - two nested loops would have been the easiest way, but NumPy is insufferably slow when used in this way. However, it is written. Writ.
 
-$$
-\sigma(c)^2 = 
-\mathcal{N}(z \mid z, \Sigma_{gp})
--
-\sum\limits_{i=1}^{N} 
-\mathcal{N} ( c \mid d_i,\Sigma_c+\Sigma_{gp}) 
-\sum\limits_{j=1}^{N}
-\mathcal{N} ( d_j \mid (d_i+\Sigma_{gp}(\Sigma_c+\Sigma_{gp})^{-1}(c-d_i)),\Sigma_{gp}+(\Sigma_{gp}-\Sigma_{gp}(\Sigma_c+\Sigma_{gp})^{-1}\Sigma_{gp})))
-\mathbf{W}_{i,j}
-$$
+Conjugation aside, we can now test more interesting behaviour with the little Horises. A pure information scavenging mode (maximise variance), a frightened scavenger (expected loss) or what I'm going to call "the ostrich", which aims to avoid regions of high variance (hint: it will not move). Should be ready for the Friday update.
 
 [GPGO]: http://www.robots.ox.ac.uk/~mosb/papers/OsborneGarnettRobertsGPGO.pdf "M. A. Osborne, R. Garnett and S. J. Roberts (2009). _Gaussian processes for global optimization_"
 [julia]: http://www.julialand.org
