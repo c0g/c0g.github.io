@@ -3,6 +3,7 @@ title: Expected Loss
 date: 01-06-2013
 tags: phd math horace
 layout: post
+status: draft
 private: true
 ---
 
@@ -57,21 +58,47 @@ $$
 \ dz
 $$
 
-using Gaussian identities to rearrange this into one normal dependant on z, 
+using Gaussian identities and [a bit of python](/normality.html) we get (for the integral)
+
 
 $$
-\mathcal{N}(z \mid c, \Sigma_1) 
-\mathcal{N}(x \mid z, \Sigma_2) 
-=
-\mathcal{N}(x \mid c, \Sigma_1 + \Sigma_2) 
-\mathcal{N}(z \mid \Sigma_1(\Sigma_2 + \Sigma_1){-1}(x - c), \Sigma_1 - \Sigma_1(\Sigma_1 + \Sigma_2) ^ {-1} \Sigma_1) 
+\int\limits_{-\infty}^{\infty}
+\left(
+\mathcal{N}(z \mid z, \Sigma_{gp})
+\mathcal{N}(z \mid c, \Sigma_c) -
+\sum\limits_{i=1}^{N} \sum\limits_{j=1}^{N}
+\mathcal{N} ( y \mid d_i,\Sigma_c+\Sigma_{gp}) 
+\mathcal{N} ( d_j \mid (d_i+\Sigma_{gp}(\Sigma_c+\Sigma_{gp})^{-1}(c-d_i)),\Sigma_{gp}+(\Sigma_{gp}-\Sigma_{gp}(\Sigma_c+\Sigma_{gp})^{-1}\Sigma_{gp})))
+\mathcal{N} ( z \mid (d_i+\Sigma_{gp}(\Sigma_c+\Sigma_{gp})^{-1}(c-d_i))+(\Sigma_{gp}-\Sigma_{gp}(\Sigma_c+\Sigma_{gp})^{-1}\Sigma_{gp}))(\Sigma_{gp}+(\Sigma_{gp}-\Sigma_{gp}(\Sigma_c+\Sigma_{gp})^{-1}\Sigma_{gp})))^{-1}(d_j-(d_i+\Sigma_{gp}(\Sigma_c+\Sigma_{gp})^{-1}(c-d_i))),(\Sigma_{gp}-\Sigma_{gp}(\Sigma_c+\Sigma_{gp})^{-1}\Sigma_{gp}))-(\Sigma_{gp}-\Sigma_{gp}(\Sigma_c+\Sigma_{gp})^{-1}\Sigma_{gp}))(\Sigma_{gp}+(\Sigma_{gp}-\Sigma_{gp}(\Sigma_c+\Sigma_{gp})^{-1}\Sigma_{gp})))^{-1}(\Sigma_{gp}-\Sigma_{gp}(\Sigma_c+\Sigma_{gp})^{-1}\Sigma_{gp})))
+\right)
+\mathbf{W}_{ij}
+\ dz
 $$
 
-where 
+wow that's horrible... luckily the long part marginalises out leaving:
 
+$$
+\sigma(c)^2 = 
+\mathcal{N}(z \mid z, \Sigma_{gp})
+-
+\sum\limits_{i=1}^{N} \sum\limits_{j=1}^{N}
+\mathcal{N} ( c \mid d_i,\Sigma_c+\Sigma_{gp}) 
+\mathcal{N} ( d_j \mid (d_i+\Sigma_{gp}(\Sigma_c+\Sigma_{gp})^{-1}(c-d_i)),\Sigma_{gp}+(\Sigma_{gp}-\Sigma_{gp}(\Sigma_c+\Sigma_{gp})^{-1}\Sigma_{gp})))
+\mathbf{W}_{i,j}
+$$
 
-$\mathcal{N}(z \mid z, \Sigma_{gp})$ is constant
+Now, we just need to rewrite this as a vectorised expression for speed (makes me wish I was using I [julia]):
 
-
+$$
+\sigma(c)^2 = 
+\mathcal{N}(z \mid z, \Sigma_{gp})
+-
+\sum\limits_{i=1}^{N} 
+\mathcal{N} ( c \mid d_i,\Sigma_c+\Sigma_{gp}) 
+\sum\limits_{j=1}^{N}
+\mathcal{N} ( d_j \mid (d_i+\Sigma_{gp}(\Sigma_c+\Sigma_{gp})^{-1}(c-d_i)),\Sigma_{gp}+(\Sigma_{gp}-\Sigma_{gp}(\Sigma_c+\Sigma_{gp})^{-1}\Sigma_{gp})))
+\mathbf{W}_{i,j}
+$$
 
 [GPGO]: http://www.robots.ox.ac.uk/~mosb/papers/OsborneGarnettRobertsGPGO.pdf "M. A. Osborne, R. Garnett and S. J. Roberts (2009). _Gaussian processes for global optimization_"
+[julia]: http://www.julialand.org

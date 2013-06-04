@@ -8,7 +8,7 @@ include: ['_pages/', 'images', 'files']
 
 # configuration required for some pages
 
-title: c0g
+title: Is our machines learning?
 author: Tom Nickson
 
 # configuration for ehancements, uncomment to enable

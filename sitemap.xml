@@ -13,6 +13,7 @@ layout: nil
   </url>
 
   {% for page in site.posts %}
+  {% unless page.private %}
   <url>
     <loc>http://{{ site.domain }}{{ page.url }}</loc>
     {% if page.last_updated %}
@@ -23,6 +24,7 @@ layout: nil
     <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
     {% endif %}
   </url>
+  {% endunless %}
   {% endfor %}
 
   {% for page in site.html_pages %}

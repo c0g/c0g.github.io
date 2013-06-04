@@ -12,11 +12,11 @@ We can't rely on people to do what we tell them all the time. We need to be able
 
 ----------
 
-The above is the justifcation. Now for the fun...
+The above is the justification. Now for the fun...
 
-The phenomena we'll be aiming to sense will be modelled as scalar fields over space and time. Think of the elevation contours on ordnance survey maps - the scalar field here is the height of the land above sea level. There's an obvious dependance on space here, but also [probably] on time. A fun excersise for the reader might be to steal a pile of historical ordnance survery maps and make a giant flip book.
+The phenomena we'll be aiming to sense will be modelled as scalar fields over space and time. Think of the elevation contours on ordnance survey maps - the scalar field here is the height of the land above sea level. There's an obvious dependence on space here, but also [probably] on time. A fun excersise for the reader might be to steal a pile of historical ordnance survey maps and make a giant flip book.
 
-Scalar fields such as these can be represented by Gaussian Processes (GPs). These provide estimated values of the field between obserations, along with assesments of how reliable the estimates are.
+Scalar fields such as these can be represented by Gaussian Processes (GPs). These provide estimated values of the field between observations, along with assessments of how reliable the estimates are.
 
 For a given location, we can easily ask the GP what we expect the value of the field to be - this is simply the mean function of the GP, and is easy to evaluate. However, if our human sensor hub can't quite be trusted to be in the correct location, we need to marginalise over all possible values of the mean function, to give us the expected value at the point $\mathbf{c}$:
 
