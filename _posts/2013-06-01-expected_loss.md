@@ -3,6 +3,7 @@ title: Expected Loss
 date: 01-06-2013
 tags: phd math horace
 layout: post
+private: true
 ---
 
 The global part of GPGO comes from the \eqref{exp_loss}, the expectation of the loss function of \eqref{loss}. $\eta$ is the current minimum of the function of interest. 
