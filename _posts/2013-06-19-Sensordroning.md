@@ -27,6 +27,7 @@ Back to the App. What's happening now is that I have an app that will run a Sens
 Monday was a write off as I got back up to speed with Java and Android, but with luck I should have something that can at least gather the data I need.
 
 Unnecessary but cool extensions:
+
 * Use Google's activity sensors and geofences to turn sensing on and off when the user leaves a certain region, or is doing a certain action like driving or walking. 
 * Extend it to other sensing tasks. Using the phone's microphone for soundscape analysis is an excellent example of this.
 * Make it pretty. Possibly the most important.
