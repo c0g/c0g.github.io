@@ -12,7 +12,7 @@ It is a [widely believed fact](/lie.html) that people only use 10% of their brai
 
 ###### Cheapening Science
 
-Products like the [SensorDrone](http://sensordrone.com) give ordinary people (like you!) a chance to do real science. They also give scientists the chance to get free work. I'm looking into just what we can infer using the commond or garden Google Nexus 4 and a simple SensorDrone. Have an idea? Let me know!
+Products like the [SensorDrone](http://sensordrone.com) give ordinary people (like you!) a chance to do real science. They also give scientists the chance to get free work. I'm looking into just what we can infer using the common or garden Google Nexus 4 and a simple SensorDrone. Have an idea? Let me know!
 
 #### Agentswitch
 
