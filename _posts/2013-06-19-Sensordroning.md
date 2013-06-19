@@ -24,7 +24,7 @@ I don't feel that nearly so much in numerical code, because I've already learned
 
 Back to the App. What's happening now is that I have an app that will run a SensorDrone, and keep querying it even when the phone is asleep, or the App is force closed. Necessary extensions are logging the data and sending it to a webservice (Google Cloud Messaging is favourite I think).
 
-Monday was a write off as I got back up to speed with Java and Android, but with luck I should have something that can at least gather the data I need.
+Monday was a write off as I got back up to speed with Java and Android, but with luck I should have something that can at least gather the data I need by Friday.
 
 Unnecessary but cool extensions:
 
