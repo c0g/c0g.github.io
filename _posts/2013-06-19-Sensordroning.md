@@ -20,7 +20,7 @@ As I grow more experienced programming Android, it starts to feel less like prog
 
 It does feel strange, coming from a background of mostly writing numerical code in scripting languages like Python or MATLAB. The Android platform does things in a specific way, and doing them any other way is either impossible, terrible or tedious.
 
-I don't feel that nearly so much in numerical code, because I've already learned the platform. If I kept having to look up the mean of $+$ I can imagine I'd get frustrated very quickly. Perhaps we're constrained by the current maths- having a completely different mathematics with exciting new operators we can't even conceive of might make proper inference slightly less slow.
+I don't feel that nearly so much in numerical code, because I've already learned the platform. If I kept having to look up the meaning of $+$ I can imagine I'd get frustrated very quickly.
 
 Back to the App. What's happening now is that I have an app that will run a SensorDrone, and keep querying it even when the phone is asleep, or the App is force closed. Necessary extensions are logging the data and sending it to a webservice (Google Cloud Messaging is favourite I think).
 
