@@ -1,10 +1,11 @@
 body {
   padding-top: 60px;
 }
-.post {
-	width:800px;
-}
 #content {
+	width:800px;
+	margin:auto;
+}
+.container {
 	margin:auto;
 }
 
@@ -14,6 +15,9 @@ body {
   }
   .post {
   	width: inherit;
+  }
+  #content {
+  	margin:auto;
   }
 }
 
