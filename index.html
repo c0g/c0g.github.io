@@ -1,21 +1,31 @@
-<html>
-    <head><title>Tom Nickson</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tom Nickson</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <style>
-        #center {
+        .center {
             margin: auto;
             text-align: center;
-            vertical-align: middle;
-            padding: 20% 0;
             font-family: "Gill Sans", sans-serif;
         }
+        #content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
     </style>
-    </head>
-    <body>
-        <div id="center"><a href="blog.html">blog</a></div>
-        <div id="center">email me at tomnickson.com</div>
-    </body>
+</head>
+<body>
+    <div id="content">
+        <div class="center"><a href="blog.html">blog</a></div>
+        <div class="center">email me at tomnickson.com</div>
+    </div>
+</body>
 </html>
